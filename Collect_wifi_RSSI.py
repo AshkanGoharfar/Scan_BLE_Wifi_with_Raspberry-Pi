@@ -31,6 +31,7 @@ f.write('location,date,b3001,b3002,b3003,b3004,b3005')
 f.close()
 
 
+
 def make_noise():
     while True:
         GPIO.output(26, GPIO.HIGH)
