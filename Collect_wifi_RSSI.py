@@ -25,8 +25,8 @@ GPIO.setup(26, GPIO.OUT)
 dev_id = 0
 
 # ##### az scenario 2 bee baad comment she
-# f = open('Labeled_rssi_data_wifi.csv', 'w+')
-f = open('UnLabeled_rssi_data_wifi.csv', 'w+')
+# f = open('../Dataset/Labeled_rssi_data_wifi.csv', 'w+')
+f = open('../Dataset/UnLabeled_rssi_data_wifi.csv', 'w+')
 f.write('location,date,b3001,b3002,b3003,b3004,b3005')
 f.close()
 
@@ -84,8 +84,8 @@ def collect_dataset():
                     csv_data.append(-200)
 
             #### save to csv
-            # f = open('Labeled_rssi_data_wifi.csv', 'a')
-            f = open('UnLabeled_rssi_data_wifi.csv', 'a')
+            # f = open('../Dataset/Labeled_rssi_data_wifi.csv', 'a')
+            f = open('../Dataset/UnLabeled_rssi_data_wifi.csv', 'a')
 
             devs = []
             for o in range(len(exact_mac)):

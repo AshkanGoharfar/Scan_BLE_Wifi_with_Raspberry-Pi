@@ -27,8 +27,8 @@ scan_ble.hci_le_set_scan_parameters(sock)
 scan_ble.hci_enable_le_scan(sock)
 
 # ##### az scenario 2 bee baad comment she
-# f = open('Labeled_rssi_data.csv', 'w+')
-# f = open('UnLabeled_rssi_data.csv', 'w+')
+# f = open('../Dataset/..Dataset/Labeled_rssi_data.csv', 'w+')
+# f = open('../Dataset/..Dataset/UnLabeled_rssi_data.csv', 'w+')
 # f.write('location,date,beacon1,beacon2,beacon3,beacon4,beacon5')
 # f.close()
 
@@ -106,8 +106,8 @@ def collect_dataset():
                     csv_data.append(-200)
 
             #### save to csv
-            f = open('Labeled_rssi_data.csv', 'a')
-            # f = open('UnLabeled_rssi_data.csv', 'a')
+            f = open('../Dataset/..Dataset/Labeled_rssi_data.csv', 'a')
+            # f = open('../Dataset/..Dataset/UnLabeled_rssi_data.csv', 'a')
 
             devs = []
             for o in range(len(exact_mac)):
